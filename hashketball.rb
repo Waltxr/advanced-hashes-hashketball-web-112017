@@ -172,8 +172,8 @@ def player_numbers(team)
     if game_hash[key][:team_name] == team
       i = 0
       while i < game_hash[key][:players].length
-        binding.pry
         numbers << game_hash[key][:players][i]["Number"]
+        binding.pry
         i += 1
       end
     end
