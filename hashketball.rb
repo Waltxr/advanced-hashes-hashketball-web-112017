@@ -168,6 +168,7 @@ end
 def player_numbers(team)
   numbers = []
   game_hash.each_key do |key|
+    binding.pry
     if game_hash[key][:team_name] == team
       i = 0
       while i < game_hash[key][:players].length
